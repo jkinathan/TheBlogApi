@@ -21,4 +21,5 @@ urlpatterns = [
     path('api/v1/',include('posts.urls')),
     path('api-auth/', include('rest_framework.urls')),#for the small login logout at the right top of rest framework dashboard
     path('api/v1/rest-auth/',include('rest_auth.urls')),
+    path('api/v1/rest-auth/registration/',include('rest_auth.registration.urls')),#new
 ]
