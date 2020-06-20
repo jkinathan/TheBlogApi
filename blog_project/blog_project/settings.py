@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'posts',
     'rest_framework',
     'rest_framework.authtoken',
-    'rest_auth'
+    'rest_auth',
 ]
 
 # new
