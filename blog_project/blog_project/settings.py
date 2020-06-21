@@ -45,7 +45,8 @@ INSTALLED_APPS = [
     'allauth',#new
     'allauth.account',#new
     'allauth.socialaccount',#new
-    'rest_auth.registration'#new
+    'rest_auth.registration',#new
+    'rest_framework_swagger', # new latest
 ]
 
 # new
@@ -58,6 +59,11 @@ REST_FRAMEWORK = {
     'rest_framework.authentication.SessionAuthentication',
     'rest_framework.authentication.TokenAuthentication'
     ],
+}
+
+SWAGGER_SETTINGS = {
+    'LOGIN_URL': 'rest_framework:login',
+    'LOGOUT_URL': 'rest_framework:logout',
 }
 
 MIDDLEWARE = [
